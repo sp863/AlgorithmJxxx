@@ -1,0 +1,13 @@
+package level02;
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class problem_09_scorecal{
+    public static void main(String[] args){
+      Scanner sc = new Scanner(System.in);
+      
+      
+
+    }
+}
