@@ -1,0 +1,10 @@
+package level05;
+
+public class problem_01_kth {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,32 @@
+package level04;
+
+import java.util.Scanner;
+
+public class problem_03_baseballgame{
+    static int c, r;
+    static int[][] map = new int[25][25];
+    
+    static int getScore() {
+      int count = 0;
+      for (int i = 0; i < r; i++) {
+        int cnt = 0;
+        for (int j = 0; j < c; j++) {
+          if (map[i][j] == 1) {
+            cnt++;
+          }
+        }
+        if (cnt == c) {
+          count++;
+        }
+      }
+      return count;
+    }
+  
+    public static void main(String[] args){
+      Scanner sc = new Scanner(System.in);
+      
+     
+      
+      
+    }
+}
