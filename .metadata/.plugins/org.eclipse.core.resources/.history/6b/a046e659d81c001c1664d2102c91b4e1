@@ -1,0 +1,10 @@
+package level03;
+
+public class problem_01_car {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
