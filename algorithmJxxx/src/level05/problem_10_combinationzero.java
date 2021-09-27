@@ -3,30 +3,45 @@ package level05;
 import java.util.Scanner;
 
 public class problem_10_combinationzero{
+    static int n, m;
+    
+    static int getTwo(int x) {
+      int cnt = 0;
+      for (int i = 2; i <= x; i*=2) {
+        cnt += (x/i);
+      }
+      return cnt;
+    }
+    
+    static int getFive(int x) {
+      int cnt = 0;
+      for (int i = 5; i <= x; i*=5) {
+        cnt += (x/i);
+      }
+      return cnt;
+    }
+  
     public static void main(String[] args){
       Scanner sc = new Scanner(System.in);
       
-      int n = sc.nextInt();
-      int m = sc.nextInt();
+      /*
+      n!
+      m!
+      (n-m)!
+      */
       
-      int[][] arr = new int[35][35];
+      n = sc.nextInt();
+      m = sc.nextInt();
       
-      for (int i = 0; i <= n; i++) {
-        if (i == 0) {
-          arr[i][0] = 1;
-        } else if (i == 1) {
-          arr[i][0] = 1;
-          arr[i][1] = 1;
-        } else {
-          for (int j = 0; j < i+1; j++) {
-            if (j == 0 || j == i) {
-              arr[i][j] = 1;
-            } else {
-              arr[i][j] = arr[i-1][j-1]+arr[i-1][j];
-            }
-          }
-        }
+      int a = n-m;
+      
+      int cnt2 = getTwo(n)-(getTwo(m)+getTwo(a));
+      int cnt5 = getFive(n)-(getFive(m)+getFive(a));
+      
+      if (cnt2 < cnt5) {
+        System.out.println(cnt2);
+      } else {
+        System.out.println(cnt5);
       }
-      System.out.println(arr[n][m]);
     }
 }
