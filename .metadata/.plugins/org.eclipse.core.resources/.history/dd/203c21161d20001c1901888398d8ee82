@@ -1,0 +1,10 @@
+package level06;
+
+public class problem_01_changecapital {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
