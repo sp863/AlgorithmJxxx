@@ -1,0 +1,10 @@
+package level08;
+
+public class problem_01_getorder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package level07;
+
+public class problem_01_factorial {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}
